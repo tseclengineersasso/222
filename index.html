@@ -16,22 +16,6 @@
     #qrcode {
         pointer-events: none;
     }
-    button {
-        background-color: #04AA6D;
-        color: rgb(255, 255, 255);
-        padding: 5px 5px;
-        margin: 5px 0;
-        border: none;
-        cursor: pointer;
-        width: 50%;
-        border-radius: 5px;
-        border: 1px solid #0d0f83;
-    }
-    button:hover {
-        opacity: 0.9;
-        background-color: #7139d3;
-        color: rgb(253, 223, 133);
-    }
     .container {
         text-align: center;
         padding: 1px;        
@@ -101,7 +85,7 @@
     width: 23%; /* Could be more or less, depending on screen size */
     height: 53%;
     min-width: 343px;
-    min-height: 503px;
+    min-height: 513px;
     }
 
     /* Add Zoom Animation */
@@ -143,8 +127,8 @@
         var upiData = "upi://pay?pa=tseclea@sbi&pn=TSECL%20ENGINEERS%20ASSOCIATION&mc=8398&tr=&tn=ID222%20Subscription&am=&cu=INR&url=&mode=02&purpose=00&orgid=159002&sign=MEUCIQC4XHZJWEfBspS1A6+UMtQcBr/ZT00bWTdvZJhRCsLilwIgGPyzjukW/iwSieU2ohpTzfGLGxYwuJfK4ws/lBz8rzs=";
         var qrcod = new QRCode(document.getElementById("qrcode"), {
             text: upiData,
-            width: 240,
-            height: 240,            
+            width: 243,
+            height: 243,            
         });
         qrcod.make();
     }
@@ -153,4 +137,5 @@
 
 </body>
 </html>
+
 
